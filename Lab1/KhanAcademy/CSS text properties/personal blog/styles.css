@@ -68,7 +68,7 @@ section {
 
 #welcome-section {
     position: relative;
-    background-image: url("./bcakground-image.jpg");
+    background-image: url("./background-image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -131,8 +131,9 @@ section {
 }
 
 .photo {
+    width: 500px;
     max-width: 100%;
-    height: 550px;
+    height: auto; /* Ensures the image maintains its aspect ratio */
     border-radius: 100%;
     border: 2px solid var(--secondary);
 }
@@ -259,8 +260,6 @@ footer {
     padding: 30px;
 }
 
-
-
 @media only screen and (width < 700px) {
     h1 {
         font-size: 50px;
@@ -268,5 +267,9 @@ footer {
     #projects .project-tile {
         height: 600px;
         width: 100%;
+    }
+    .photo {
+        height: auto;
+        max-width: 100%;
     }
 }
