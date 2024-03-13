@@ -1,6 +1,7 @@
 <h1>Albums</h1>
+<input class="search" type="text" placeholder="Filter by album ID" [(ngModel)]="filterText" (keyup)="filterResults()">
 <div class="albums-container" *ngIf="loaded">
-  <div class="card" *ngFor="let album of albums">
+  <div class="card" *ngFor="let album of filteredAlbums">
     <a [routerLink]="['/album', album.id]" class="card-id">
       ID: {{ album.id }}
     </a>
@@ -9,5 +10,5 @@
 </div>
 
 <ng-template #loading>
-  <p>Posts are loading...</p>
+  <p>Albums are loading...</p>
 </ng-template>
