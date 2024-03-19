@@ -1,0 +1,10 @@
+def array_front9(nums):
+  first_four = len(nums)
+  if first_four > 4:
+    first_four = 4
+    
+  for i in range(first_four):
+    if nums[i] == 9:
+      return True
+  return False
+      
