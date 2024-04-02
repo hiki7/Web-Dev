@@ -4,6 +4,6 @@ The Library Management System is a web application designed to streamline the pr
 
 # Group Members
 
-22B030422 - Yerzhan Rsaliyev \n
-22B031187 - Maksat Mukan \n
-22B030460 - Amirshakh Khamrayev \n
+22B030422 - Yerzhan Rsaliyev
+22B031187 - Maksat Mukan 
+22B030460 - Amirshakh Khamrayev
