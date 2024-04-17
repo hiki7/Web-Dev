@@ -1,20 +1,37 @@
-<fieldset style="width:14cm">
-  <label>Vacancy name </label>
-  <input type="text" [(ngModel)]="newVacancy">
-  <button (click)="addVacancy()">add Vacancy</button>
-</fieldset>
-<div *ngIf="vacancies.length != 0">
-  <ul>
-      <li *ngFor="let vacancy of vacancies">
-        {{vacancy.name}} <button (click)="deleteVacancy(vacancy.id)">X</button>
-        <fieldset style="width: 13cm;margin-top: 10px;margin-bottom: 10px;">
-          <label style="margin-right: 10px;">Update Vacancy name</label>
-          <input type="text" [(ngModel)]="newName" style="margin-right: 10px;">
-          <button (click)="updateVacancy(vacancy.id)">update Vacancy name</button>
-        </fieldset>
-      </li>
-  </ul>
-</div>
-<div *ngIf="vacancies.length == 0">
-  <h1>No vacancies</h1>
+<div class="main-container">
+  <div class="left-container">
+    <div class="user-info">
+      <h2>Мои события</h2>
+      <ul>
+        <li>Отклики и приглашения</li>
+        <li>Просмотры резюме</li>
+        <li>Избранные вакансии</li>
+        <li>Автопоиски</li>
+      </ul>
+    </div>
+  </div>
+  <div class="right-container">
+    <h1 class="vacancy-title">Вакансии</h1>
+    <fieldset class="new-vacancy-fieldset">
+      <label>Название вакансии:</label>
+      <input type="text" [(ngModel)]="newVacancy" placeholder="Разработчик">
+      <button (click)="addVacancy()">Добавить</button>
+    </fieldset>
+    <div *ngIf="vacancies.length != 0">
+      <ul class="vacancy-list">
+        <li *ngFor="let vacancy of vacancies">
+          <p class="vacancy-name">{{vacancy.name}}</p>
+          <button (click)="deleteVacancy(vacancy.id)" class="delete-btn">Удалить</button>
+          <fieldset class="update-fieldset">
+            <label>Новое название вакансии:</label>
+            <input type="text" [(ngModel)]="newName" placeholder="...">
+            <button (click)="updateVacancy(vacancy.id)" class="update-btn">Обновить</button>
+          </fieldset>
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="vacancies.length == 0">
+      <h1>No vacancies</h1>
+    </div>
+  </div>
 </div>
