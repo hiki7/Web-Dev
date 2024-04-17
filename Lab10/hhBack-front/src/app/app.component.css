@@ -51,4 +51,17 @@
     width: 100%;
     max-width: 1200px;
 }
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: grey;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   
