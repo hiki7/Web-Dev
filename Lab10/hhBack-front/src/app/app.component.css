@@ -1,0 +1,54 @@
+.dotted-underline {
+    border-bottom: 1px dashed #EEEEEE;
+}
+
+.header {
+    background-color: #20262B;
+    color: #EEEEEE;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header-content  a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-content a:hover {
+    color: #a5cdda;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    color: #EEEEEE;
+}
+
+.left-nav a {
+    margin-right: 15px;
+}
+
+.logo img {
+    width: 50px;
+}
+  
+.right-nav a {
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+  
